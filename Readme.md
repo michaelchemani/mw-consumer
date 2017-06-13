@@ -18,4 +18,4 @@ Edit `ecom/www/backend/public/consume.php` update your store id line 26 and 30.
 
 #### Run that
 
-Create products using retail-cli (retail seed -p 100 -b 0 -c 0)
+Create products using retail-cli (`retail seed -p 100 -b 0 -c 0`)
