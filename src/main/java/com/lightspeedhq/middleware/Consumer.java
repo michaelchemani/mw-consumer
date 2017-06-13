@@ -33,7 +33,7 @@ public class Consumer {
             for (ConsumerRecord<String, String> record : consumer.poll(100)) {
                 System.out.println(record.value());
 
-                 HttpResponse response = Unirest.post("http://localhost:8888/toto.php")
+                 HttpResponse response = Unirest.post("http://localhost:8888/consume.php")
                          .body(record.value())
                          .asString();
                  System.out.println(response.getStatus());
